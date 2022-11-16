@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 
 public class TestRegister {
-	
 
 	private WebDriver driver;
 	PageRegister pageregister;

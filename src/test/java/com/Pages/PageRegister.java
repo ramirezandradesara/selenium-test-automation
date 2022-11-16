@@ -1,27 +1,15 @@
 package com.Pages;
 
-
 import com.Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class PageRegister extends BasePage {
 
-	// By buttonRegister = By.linkText("Crear cuenta");
-	/*By buttonRegister1 = By.partialLinkText("cuenta");
-	By name = By.name("firstName");
-	By lastName = By.id("lastName");
-	By email = By.cssSelector("#email");
-	By password = By.xpath("/html/body/div/main/div/form/div[3]/input");
-	By rePassword = By.xpath("//*[@id=\'repassword\']");*/
-	By buttomFinish = By.cssSelector("#root > main > div > form > button");
-	String correos;
-
 	By buttonMyAccount = By.className("dropdown");
 	By buttonRegister = By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[1]");
-	//By name = By.name("firstName");
-	By name = By.id("input-firstname");
 
+	By name = By.id("input-firstname");
 	By lastName = By.id("input-lastname");
 	By email = By.id("input-email");
 	By telephone = By.id("input-telephone");
@@ -39,8 +27,6 @@ public class PageRegister extends BasePage {
 	}
 
 	public void registerUser() throws InterruptedException {
-		/*new WebDriverWait(driver,Duration.ofSeconds(10))
-		.until(ExpectedConditions.elementToBeClickable(buttonRegister));*/
 		// 1
 		oprimir(buttonMyAccount);
 		Thread.sleep(2000);
@@ -62,8 +48,7 @@ public class PageRegister extends BasePage {
 		Thread.sleep(2000);
 		// 6
 		oprimir(continueButton);
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		esperaExplicita(result,"Congratulations! Your new account has been successfully created!",10);
-
 	}
 }

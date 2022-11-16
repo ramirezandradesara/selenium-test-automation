@@ -15,7 +15,7 @@ public class TestCart {
 	public void setUp() throws Exception {
 		pageLogin = new PageCart(driver, null);
 		driver =pageLogin.chromeDriverConnection();
-		pageLogin.link("http://fe.deitech.online/");
+		pageLogin.link("https://opencart.abstracta.us/index.php?route=common/home");
 	
 	}
 	@AfterEach
