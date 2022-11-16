@@ -1,7 +1,6 @@
 package com.Reports;
 
 import com.relevantcodes.extentreports.ExtentReports;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
