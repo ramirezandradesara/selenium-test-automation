@@ -24,7 +24,7 @@ public class TestRegister {
 	}
 
 	@Test
-	public void test() throws InterruptedException {
+	public void register() throws InterruptedException {
 		pageregister.registerUser();
 	}
 }

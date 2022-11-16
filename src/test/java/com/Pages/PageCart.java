@@ -17,7 +17,7 @@ public class PageCart extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void loginUser() throws InterruptedException {
+	public void addToCart() throws InterruptedException {
 		// 1
 		teclear("Iphone",searchBar);
 		// 2

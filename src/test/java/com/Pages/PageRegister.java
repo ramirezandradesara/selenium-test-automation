@@ -36,7 +36,7 @@ public class PageRegister extends BasePage {
 		// 3
 		teclear("Mob", name);
 		teclear("Kageyama",lastName);
-		teclear("mob7@hotmail.com",email);
+		teclear("mob98@hotmail.com",email);
 		teclear("11663322",telephone);
 		teclear("123456",password);
 		teclear("123456",rePassword);

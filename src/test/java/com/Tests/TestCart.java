@@ -1,6 +1,7 @@
 package com.Tests;
 
 import com.Pages.PageCart;
+import com.Pages.PageRegister;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,14 +10,13 @@ import org.openqa.selenium.WebDriver;
 public class TestCart {
 	
 	private WebDriver driver;
-	PageCart pageLogin;
+	PageCart pageCart;
 	
 	@BeforeEach
 	public void setUp() throws Exception {
-		pageLogin = new PageCart(driver, null);
-		driver =pageLogin.chromeDriverConnection();
-		pageLogin.link("https://opencart.abstracta.us/index.php?route=common/home");
-	
+		pageCart = new PageCart(driver, null);
+		driver =pageCart.chromeDriverConnection();
+		pageCart.link("https://opencart.abstracta.us/index.php?route=common/home");
 	}
 	@AfterEach
 	public void tearDown() throws Exception {
@@ -24,8 +24,8 @@ public class TestCart {
 	}
 
 	@Test
-	public void test() throws InterruptedException {
-		pageLogin.loginUser();
+	public void addToCart() throws InterruptedException {
+		pageCart.addToCart();
 	}
 
 }
