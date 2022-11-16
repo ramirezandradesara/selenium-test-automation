@@ -1,19 +1,19 @@
 package com.Tests;
 
-import com.Pages.PageLogin;
+import com.Pages.PageCart;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 
-public class TestLogin {
+public class TestCart {
 	
 	private WebDriver driver;
-	PageLogin pageLogin;
+	PageCart pageLogin;
 	
 	@BeforeEach
 	public void setUp() throws Exception {
-		pageLogin = new PageLogin(driver, null);
+		pageLogin = new PageCart(driver, null);
 		driver =pageLogin.chromeDriverConnection();
 		pageLogin.link("http://fe.deitech.online/");
 	
