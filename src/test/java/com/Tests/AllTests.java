@@ -3,7 +3,7 @@ import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
 
 @Suite
-@SelectClasses({ TestCart.class, TestRegister.class})
+@SelectClasses({ TestRegister.class, TestCart.class })
 public class AllTests {
 
 }
