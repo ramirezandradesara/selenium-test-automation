@@ -34,12 +34,14 @@ public class TestCart {
 
 	@Test
 	public void addToCart() throws InterruptedException {
-		test1 = report.startTest("Test agregar a carrito exitoso");
+		/*test1 = report.startTest("Test agregar a carrito exitoso");
 		test1.log(LogStatus.INFO, "Inicia test");
 		pageCart.addToCart();
 		test1.log(LogStatus.PASS,"Finalizó test correctamente");
 		//test1.log(LogStatus.FATAL,"El test no finalizó correctamente");
-		report.endTest(test1);
+		report.endTest(test1);*/
+
+
 	}
 
 }

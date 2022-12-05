@@ -21,12 +21,15 @@ public class PageRegister extends BasePage {
 	By continueButton =  By.xpath("//*[@id=\"content\"]/form/div/div/input[2]");
 
 	By result = By.xpath("//*[@id=\"content\"]/p[1]");
+	By texto = By.linkText("Desktops");
 	
 	public PageRegister(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 	}
 
 	public void registerUser() throws InterruptedException {
+	oprimir(texto);
+		Thread.sleep(5000);
 		// 1
 		oprimir(buttonMyAccount);
 		Thread.sleep(2000);
@@ -36,7 +39,7 @@ public class PageRegister extends BasePage {
 		// 3
 		teclear("Mob", name);
 		teclear("Kageyama",lastName);
-		teclear("mob17814779@hotmail.com",email);
+		teclear("mob1781i47749@hotmail.com",email);
 		teclear("11663322",telephone);
 		teclear("123456",password);
 		teclear("123456",rePassword);

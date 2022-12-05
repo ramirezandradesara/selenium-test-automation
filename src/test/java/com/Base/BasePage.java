@@ -18,7 +18,8 @@ public class BasePage {
 	protected WebDriverWait wait;
 
 	public WebDriver chromeDriverConnection() {
-		System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\driver\\chromedriver.exe");
+		// System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/driver/chromedriver.exe");
 		driver = new ChromeDriver();
 		return driver;
 	}

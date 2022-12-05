@@ -1,4 +1,7 @@
-Tests\Test01.class
-com\Pages\PageLogin.class
-com\Tests\TestLogin.class
+com\Tests\TestCart.class
+com\Reports\ExtentReport.class
 com\Base\BasePage.class
+com\Pages\PageCart.class
+com\Pages\PageRegister.class
+com\Tests\TestRegister.class
+com\Tests\AllTests.class
